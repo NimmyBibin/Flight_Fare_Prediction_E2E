@@ -1,14 +1,13 @@
 Flask
-pandas
-numpy
-scikit-learn
 Flask-Cors
+dill
 matplotlib
-seaborn
-statsmodels
+numpy
 openpyxl
+pandas
 pymongo
 python-dotenv
 pyyaml
-dill
--e .
+scikit-learn
+seaborn
+statsmodels
