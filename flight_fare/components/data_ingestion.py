@@ -25,6 +25,8 @@ class DataIngestion:
             logging.info(f"Saving data in feature store ...")
             # drop na values
             df.dropna(inplace=True)
+            #drop duplicates
+            df.drop_duplicates(keep='first',inplace=True)
 
             logging.info(f"Create feature store folder if not available.")
             feature_store_dir = os.path.dirname(self.data_ingestion_config.feature_store_file_path)
