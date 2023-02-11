@@ -1,0 +1,2 @@
+[ 2023-02-11 09:25:39,141 ] 33 root - INFO - test logger starts here
+[ 2023-02-11 09:25:39,141 ] 40 root - INFO - stopping logger and exception

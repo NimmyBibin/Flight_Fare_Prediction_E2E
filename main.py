@@ -1,3 +1,5 @@
+
+"""
 import pymongo
 
 # Provide the mongodb localhost url to connect python to mongodb.
@@ -23,3 +25,16 @@ all_record = collection.find()
 # Printing all records present in the collection
 for idx, record in enumerate(all_record):
      print(f"{idx}: {record}")
+"""
+import sys,os
+from flight_fare.logger import logging
+from flight_fare.exception import FlightFareException
+from flight_fare.entity import config_entity
+from config_entity import data_ingestion_config
+if __name__=="__main__":
+     try:
+         training_pipeline_config=config_entity.TrainingPipelineConfig()
+         data_ingestion_config=DataIngestionConfig(training_pipeline_config)
+         print(data_ingestion_config.to_dict())
+     except Exception as e:
+          print(e)
